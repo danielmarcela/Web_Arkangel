@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- Hoja del estilo creado a partir de una guía de estilo -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Hoja del estilo creado a partir de la película -->
+  <!-- <link rel="stylesheet" href="css/second.css"> -->
+
+</head>
+<body>
+
+<!--Secciones-->
+<nav id="top">
+  <ul>
+    <li><a href="#sinopsis">Información</a></li>
+    <li><a href="#tecnologias">Tecnología</a></li>
+    <li><a href="#impacto">Impacto</a></li>
+    <li><a href="#necesidades">Necesidades </a>
+    </li>
+  </ul>
+</nav>
+
+<hr class="separador"/>
+
+<!--Imagen de inicio -->
+<img class="img_inicio" src="img/Arkangel.jpg"/>
+<p class="Titulo">Arkangel</p>
+<hr class="separador"/>
+
+<!--Sinopsis estructurado con tags HTML5-->
+<section id="sinopsis">
+  <article>
+    <header>
+      <h2 class="section_title">Información</h2>
+      <!-- Puedes hacer los headers de sección tan complejos como quieras -->
+      </header>
+    <p class="section_text">
+      Arkangel es una aplicación que le permitirá a los padres estar tranquilos ya
+      que les permitirá poder monitorizar las constantes de sus hijos, así como donde
+      se encuentra en todo momento en tiempo real a trvés de un GPS y que sean avisados
+      en el caso de que ocurra algo malo con sus hijos.
+    </p>
+    <p><div class="to_top">&nbsp;&nbsp;</a></div></p>
+   </article>
+</section>
+
+<hr class="separador"/>
+
+<section class="section" id="necesidades">
+  <h2 class="section_title">Necesidades</h2>
+  <p class="section_text">
+    Esta aplicación ha sido creada ante la gran cantidad de secuestros y desapariciones
+    que ocurren hoy en día en la maoría de los países. Esto permitirá a los padres y a
+    los cuerpos de seguridad encontrar a los niños de manera más rápida y que
+    los telediarios no tengan que comentar noticias que pueden llegar a ser muy duras.
+  </p>
+
+  <p><div class="to_top">&nbsp;&nbsp;</a></div></p>
+</section>
+
+<hr class="separador"/>
+
+<!--Tecnologías-->
+<section class="section" id="tecnologias">
+  <h2 class="section_title">Tecnologías involucradas</h2>
+  <p class="section_text">
+    La tencología usada para poder realizar todas estas funciones consiste en tener que implantar a los niños
+    un chip indolor en el cerebro que nos permitirá recoger toda la información vital del niño para que luego
+    esta pueda ser enviada al dispositivo móvil de manera remota y en tiempo real.
+  </p>
+
+  <p><div class="to_top">&nbsp;&nbsp;</a></div></p>
+</section><!--fin tecnologías-->
+
+<hr class="separador"/>
+<!--Impacto-->
+<section class="section" id="impacto">
+  <h2 class="section_title">Impacto</h2>
+  <p class="section_text">
+    En nuestra empresa creemos que el desarrollo de este tipo de tecnologias permitirán que en un futuro tengamos
+    un alto grado de seguridad con nuestros hijos y no tendremos que lamentar noticias que dejen abrumadas a la
+    gran mayoría de la población mundial.
+  </p>
+  <div class="to_top">&nbsp;&nbsp;</a></div></p>
+</section>
+
+<hr class="separador"/>
+
+<span class="ir-arriba">Subir</span>
+
+<!-- HTML5 -->
+  <footer>
+    <p>Creador: Daniel Marcela Neves</p>
+    <p>Esta página ha sido creada para proporcionar información sobre la aplicación Arkagel.</p>
+    <p>Práctica Interfaces Imagiandas USAL</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <!-- <script src="js/plugins.js"></script> -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--   <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+    	$('.ir-arriba').click(function(){
+    		$('body, html').animate({
+    			scrollTop: '0px'
+    		}, 300);
+    	});
+
+    	$(window).scroll(function(){
+    		if( $(this).scrollTop() > 0 ){
+    			$('.ir-arriba').slideDown(300);
+    		} else {
+    			$('.ir-arriba').slideUp(300);
+    		}
+    	});
+
+    });
+  </script>
+
+</body>
+</html>
